@@ -7,10 +7,10 @@
         <p>{{ currentDate | date : "medium" }}</p>
       </div>
     </header>
-    <p>New York: {{ currentTemperatures.newYork }}</p>
-    <p>Berlin: {{ currentTemperatures.berlin }}</p>
-    <p>Paris: {{ currentTemperatures.paris }}</p>
-    <p>Chicago: {{ currentTemperatures.chicago }}</p>
+    <p>New York: {{ currentTemperatures.newYork | number : "1.1-2" }}</p>
+    <p>Berlin: {{ currentTemperatures.berlin | number : "1.1-2" }}</p>
+    <p>Paris: {{ currentTemperatures.paris | number : "1.1-2" }}</p>
+    <p>Chicago: {{ currentTemperatures.chicago | number : "1.1-2" }}</p>
   </article>
 
   <article class="temperatures">
